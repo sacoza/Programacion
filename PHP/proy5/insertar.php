@@ -30,10 +30,10 @@ echo "<br>Nombre: ".$fila['nombre'];
 echo "<br>Apellidos: ".$fila['apellidos'];
 echo "<br>Edad: ".$fila['edad'];
 echo "<br>Curso: ".$fila['curso'];
-echo "<br>PUTA: ".$fila['puntuacion'];
+echo "<br>Puntuación: ".$fila['puntuacion'];
 echo "<br>";
-   }
- }
+  }
+}
 
 ?>
 
