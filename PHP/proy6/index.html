@@ -2,44 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>INDEX</title>
   </head>
           <script type="text/javascript" src="comprobar.js"> </script>
   <body>
     <style media="screen">
 input{color:#696969; background-color:#FFE4C4}
 .boton{color:#696969; background-color:#00CED1}
+a{text-decoration: none;}
+.button{background-color:#00CED1;}
+.button:hover{background-color:#F08080;}
 
     </style>
-        <a href="listadoUsuario.php">Listado de Usuaruios</a>
+        <button class="button"><a href="listadoUsuario.php">Listado de Usuarios</a></button>
 <hr>
 <div id="Comentarios"></div>
-<form class="" action="insertar.php" method="post">
-  <input type="text" name="nombre" id="input" value="Nombre" onFocus="this.value=''"><br>
-  <input type="text" name="apellidos" id="input" value="Apellidos" onFocus="this.value=''"><br>
-  <input type="text" name="edad" id="input" value="Edad" onFocus="this.value=''"><br>
-  <input type="text" name="curso" id="input" value="Curso" onFocus="this.value=''"><br>
-  <input type="text" name="puntuacion" id="input" value="Puntuacion" onFocus="this.value=''"><br>
+<form class="" action="insertar.php" method="post" onsubmit="return validar()">
+  <input type="text" name="nombre" id="nombre" value="Nombre" onFocus="this.value=''"><br>
+  <input type="text" name="apellidos" id="apellidos" value="Apellidos" onFocus="this.value=''"><br>
+  <input type="text" name="edad" id="edad" value="Edad" onFocus="this.value=''"><br>
+  <input type="text" name="curso" id="curso" value="Curso" onFocus="this.value=''"><br>
+  <input type="text" name="puntuacion" id="puntuacion" value="Puntuacion" onFocus="this.value=''"><br>
   <br>
-  <input type="submit" name="Insertar" onclick="validar()" value="INSERTAR" class="boton">
+  <input type="submit" name="Insertar" value="INSERTAR" class="boton">
 </form>
 <hr>
 
-<form class="" action="borrarUsuario.php" method="post">
-  <input type="text" name="id" id="miCampo" value="id" onFocus="this.value=''"><br>
+<form class="" action="borrarUsuario.php" method="post" onsubmit="return seguro()">
+  <input type="text" name="id" value="id" onFocus="this.value=''"><br>
   <br>
-  <input type="submit" name="Borrar" value="BORRAR"  class="boton">
+  <input type="submit" name="Borrar" value="BORRAR" class="boton">
 </form>
 <hr>
-<form class="" action="actualizarUsuario.php" method="post">
-  <input type="text" name="id" id="input" value="id" onFocus="this.value=''"><br>
-  <input type="text" name="nombre" id="input" value="Nombre" onFocus="this.value=''"><br>
-  <input type="text" name="apellidos" id="input" value="Apellidos" onFocus="this.value=''"><br>
-  <input type="text" name="edad" id="input" value="Edad" onFocus="this.value=''"><br>
-  <input type="text" name="curso" id="input" value="Curso" onFocus="this.value=''"><br>
-  <input type="text" name="puntuacion" id="input" value="Puntuacion" onFocus="this.value=''"><br>
+<form class="" action="actualizarUsuario.php" method="post" onsubmit="return validar2()">
+  <input type="text" name="id" value="id" id="id" onFocus="this.value=''"><br>
+  <input type="text" name="nombre" id="nombre2" value="Nombre" onFocus="this.value=''"><br>
+  <input type="text" name="apellidos" id="apellidos2" value="Apellidos" onFocus="this.value=''"><br>
+  <input type="text" name="edad" id="edad2" value="Edad" onFocus="this.value=''"><br>
+  <input type="text" name="curso" id="curso2" value="Curso" onFocus="this.value=''"><br>
+  <input type="text" name="puntuacion" id="puntuacion2" value="Puntuacion" onFocus="this.value=''"><br>
   <br>
-<input type="submit" name="Actualizar" onclick="validar()" value="ACTUALIZAR"  class="boton">
+<input type="submit" name="Actualizar" value="ACTUALIZAR" class="boton">
 </form>
 <hr>
   </body>

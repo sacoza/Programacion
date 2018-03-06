@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ACTUALIZAR</title>
   </head>
   <body>
     <?php
-    include 'listadoUsuario.php';
+
     include 'conexion.php';
 
     $id=$_POST['id'];
@@ -16,9 +16,10 @@
     $curso=$_POST['curso'];
     $puntuacion=$_POST['puntuacion'];
 
-    $consulta="UPDATE usuarios SET (nombre='$nombre',apellidos='$apellidos',edad=$edad,cursos=$curso,puntuacion=$puntuacion) WHERE id=$id";
+    $consulta="UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',edad=$edad,curso=$curso,puntuacion=$puntuacion WHERE id=$id";
     $insert=$conector->query($consulta);
 
+      include 'listadoUsuario.php';
     ?>
   </body>
 </html>
