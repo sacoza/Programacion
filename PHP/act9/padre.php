@@ -8,6 +8,7 @@
     public $tipo="";
     public $nombre="";
     public $nivelinicial="";
+    public $poder="";
 
     public function setTipo($tipo){
       $this->tipo=$tipo;
@@ -26,6 +27,12 @@
     }
     public function getNivelInicial(){
       return $this->nivelinicial;
+    }
+    public function setpoder($poder){
+      $this->poder=$poder;
+    }
+    public function getpoder(){
+      return $this->poder;
     }
 }
  ?>

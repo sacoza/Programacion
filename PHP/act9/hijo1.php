@@ -1,19 +1,15 @@
-<a href="hijo2.php">Mamoresrit</a>
+
 <?php
 /**
  *
  */
+include_once 'padre.php';
 class Markeset extends padre
 {
-
-  function __construct()
-  {
-  }
-
      //Objeto
 
 public function Evo(){
-  $nivel=($this->nivelinicial*100);
+  $nivel=(parent::setNivelInicial(parent::getNivelInicial()+1));
   return $nivel;
 }
 }

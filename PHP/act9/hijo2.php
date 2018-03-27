@@ -1,11 +1,11 @@
-<a href="hijo1.php">Markeset</a>
-<?php
 
-     include 'padre.php';
-     //Objeto
-     $objeto = new padre();
-     $objeto->setTipo('Planta');
-     $objeto->setNombre("Mamoresrit");
-     $objeto->setNivelInicial("1");
-     $objeto->Evo("");
+<?php
+include_once 'padre.php';
+class Mamoresrit extends padre
+{
+  function Modpoder() {
+$poder= Math.random(parent::setNivelInicial(parent::getNivelInicial()));
+    return $poder;
+  }
+   }
 ?>
