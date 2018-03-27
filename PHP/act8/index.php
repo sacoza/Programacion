@@ -6,14 +6,9 @@
            $objeto = new Cuadrado();
            $objeto->setLadoCuadrado(4.5);
 ?>
-           <p>/\\\ <?= $objeto->getLadoCuadrado() ?><p>
-<?php
-           echo "El lado del cuadrado mide: " .$objeto->getLadoCuadrado() ."<br><br>";
-
-          echo "El area es: " .$objeto->areaCuadrado() ."<br>";
-          echo "El perimetro es: " .$objeto->perimetroCuadrado() ."<br>";
-
-?>
+           <p>El lado del cuadrado mide:  <?= $objeto->getLadoCuadrado() ?><p>
+           <p>El area es:  <?= $objeto->areaCuadrado()?><p>
+           <p>El perimetro es:   <?= $objeto->perimetroCuadrado() ?><p>
 <?php
    echo "<p>CIRCULO</p>";
 
@@ -21,22 +16,18 @@
           //Objeto
           $objeto2= new Circulo;
           $objeto2->setNumero(5.2);
-          echo "El radio del triangulo es: " .$objeto2->getNumero() ."<br><br>";
-
-          echo "El area es: " .$objeto2->areaCirculo();
-          echo "<br>El perimetro es: " .$objeto2->perimetroCirculo() ."<br>";
 ?>
+<p>El radio del triangulo es:  <?= $objeto2->getNumero() ?><p>
+<p>El area es:  <?= $objeto2->areaCirculo()?><p>
+<p>El perimetro es:   <?= $objeto2->perimetroCirculo() ?><p>
 <?php
    echo "<p>TRIANGULO</p>";
 
           include 'triangulo.php';
           $objeto3= new Triangulo;
           $objeto3->setBase(5.2);
-          echo "La base del triangulo mide: " .$objeto3->getBase() ."<br>";
-          $objeto3->setAltura(5.2);
-          echo "La altura del triangulo mide: " .$objeto3->getAltura() ."<br><br>";
-
-
-          echo "El area es: " .$objeto3->areaTri() ."<br>";
-          echo "El perimetro es: " .$objeto3->perimetroTri() ."<br>";
 ?>
+<p>La base del triangulo mide: <?= $objeto3->getBase() ?><p>
+<p>La altura del triangulo mide: <?= $objeto3->getAltura() ?><p>
+<p>El area es:  <?= $objeto3->areaTri()?><p>
+<p>El perimetro es:   <?= $objeto3->perimetroTri() ?><p>
