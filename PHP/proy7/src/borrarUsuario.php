@@ -17,7 +17,6 @@ a{text-decoration: none;}
 include '../modelo/consultas.php';
 $consulta = new consultas();
 $resultado=$consulta->delete($_POST['id']);
-echo "El usuario se eliminó";
  ?>
     </form>
   </body>
